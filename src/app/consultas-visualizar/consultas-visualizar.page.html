@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+</ion-header>
+
+<ion-content color="primary">
+
+  <ion-button class="btnVoltar" fill="clear" size="big" color="dark" onClick="history.go(-1)">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">ID</ion-label>
+      <ion-input disabled="true" value="{{consulta.id}}"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="floating">Nome do Médico</ion-label>
+      <ion-input disabled="true" value="{{consulta.nomemedico}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Especialidade</ion-label>
+      <ion-input disabled="true" value="{{consulta.especialidade}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Data</ion-label>
+      <ion-input disabled="true" value="{{consulta.dataconsulta}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Metódo</ion-label>
+      <ion-input disabled="true" value="{{consulta.metodo}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Feita por:</ion-label>
+      <ion-input disabled="true" value="Mateus"></ion-input>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

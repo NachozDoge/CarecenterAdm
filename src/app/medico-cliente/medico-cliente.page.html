@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>  
+    <img src="/assets/imgs/carecenterlogo.png">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color='primary'>
+  <div class="background-card">
+    <ion-card>  
+        <ion-card-content>
+
+            <div class="title">
+              <center>Médicos</center>
+            </div>
+            <div class="separador"></div>
+
+            <div class="card-content">
+              <div class="SBar">
+                <form class="searchbar">
+                 
+                  <ion-select #nome value="especialidade"   >
+                    <ion-select-option value="Fisioterapeuta">Fisioterapeuta</ion-select-option>
+                    <ion-select-option value="Nutricionista">Nutricionista</ion-select-option>
+                    <ion-select-option value="Neuro">Neuro</ion-select-option>
+                  </ion-select>
+                </form>
+                <ion-button shape="round" color="dark" class="btnSearchbar" (click)="pesquisar()" style="margin-right: 1.7em;">
+                  Pesquisar</ion-button>
+              </div>
+
+              <ion-list style="margin-top: 2em;">
+                <ion-item *ngFor="let medico of lista">
+                  <ion-label>{{medico.nome}}</ion-label>
+                  <ion-button color="dark" (click)="visualizar(medico)" shape="round">Ver</ion-button>
+                  <ion-button color="dark" (click)="agendar(medico.id)" shape="round">Agendar</ion-button>
+                </ion-item>
+              </ion-list>
+            </div>
+
+        </ion-card-content>
+      </ion-card>
+  </div>
+</ion-content>
+      
+      

@@ -1,0 +1,85 @@
+<ion-header >
+  <ion-toolbar >
+    <ion-title> 
+      <img src="/assets/imgs/carecenterlogo.png" >
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color='primary'> 
+    <div class="ion-header">
+      <ion-avatar >
+        <img src="/assets/imgs/usuario.png" >
+      </ion-avatar>
+  </div>
+ 
+ <div class="cards">
+  <ion-card>
+    <ion-card-header >
+      <ion-card-title><center>Ficha médica</center></ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-scroll scrollY="true">
+      
+      <ion-card (click)="expandItem(item)" *ngFor="let item of items">
+        <ion-card-header>
+          <ion-card-title style="font-size: 100%;">Nome puxado do banco aqui    <ion-icon class="downArroIcon" name="chevron-down-outline"></ion-icon></ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <app-expandable expandHeight="100px" [expanded]="item.expanded">
+            <p>
+              Listagem de banco aqui.
+            </p>
+            <p>
+              Listagem de banco aqui.
+            </p>
+            <p>
+              Listagem de banco aqui.
+            </p>
+          </app-expandable>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+
+          <div class="infosRow">
+            <div class="infoRow">
+              Tipo Sanguíneo:
+            </div>
+            <div class="infoRowData">
+                O+
+            </div>
+          </div>
+
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+
+          <div class="infosRow">
+            <div class="infoRow">
+              Idade:
+            </div>
+            <div class="infoRowData">
+                20 Anos
+            </div>
+          </div>
+
+        </ion-card-content>
+      </ion-card>
+      
+    </ion-scroll>
+    </ion-card-content>
+  </ion-card>
+
+</div>
+</ion-content>

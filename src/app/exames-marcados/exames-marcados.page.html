@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>  
+    <img src="/assets/imgs/carecenterlogo.png">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color='primary'>
+
+  <div class="page-title">
+    <center>Exames</center>
+  </div>
+
+  <div class="background-card">
+  <ion-card> 
+    
+    <ion-card-content>
+        <div class="title">
+          <center>Pendentes</center>
+        </div>
+        <div class="line"></div>
+
+<!-- 1st item-->
+<div class="card-content">
+
+   
+
+              <div>
+
+              <ion-list>
+                <ion-item *ngFor="let exame of lista">
+                  <ion-label>{{exame.sangue}}</ion-label>
+                  <ion-button color="dark" (click)="visualizar(exame)">Visualizar</ion-button>
+                </ion-item>
+              </ion-list>
+            </div>
+
+      
+</div>
+
+       
+
+<!-- 2nd item-->
+       
+      
+
+<!-- 3rd item-->
+         
+
+
+    </ion-card-content>
+  </ion-card>
+
+</div>
+
+
+<div class="background-card">
+  <ion-card> 
+    
+    <ion-card-content>
+        <div class="title">
+          <center>Anteriores</center>
+        </div>
+      
+
+<!-- 1st item-->
+<div class="card-content">
+  <ion-list>
+    <ion-item *ngFor="let exame of lista">
+      <ion-label>{{exame.sangue}}</ion-label>
+      <ion-button color="dark" (click)="visualizar(exame)">Visualizar</ion-button>
+    </ion-item>
+  </ion-list>        
+</div>
+       
+
+<!-- 2nd item-->
+        
+     
+
+    </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>

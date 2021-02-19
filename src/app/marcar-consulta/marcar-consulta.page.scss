@@ -1,0 +1,116 @@
+ion-avatar,
+ion-avatar > img{
+    border-radius:50%;
+    height:7rem;
+    width:7rem;
+    margin-left: 29%;
+    margin-top: 5px;
+    position: absolute;
+    display: block;
+    top: 46px;
+    left: calc(50% 50px);
+}
+
+ion-toolbar{
+    background-color: transparent;
+    img{
+        width: 65px;
+        height: 50px;
+        margin-right: 5px;
+        float: right;
+    }
+}
+
+ion-card-subtitle{
+    font-size: 140%;
+    margin-bottom: 10%;
+}
+
+ion-label{
+   margin-left:5%;
+   margin-top:2%;
+   color:rgb(46, 46, 46);
+   font-weight:bold;
+   font-size: 80%;
+}
+
+form{
+    margin-bottom: 10%;
+}
+
+.userInfos{
+    float:right;
+    display: inline;
+    margin-right: 5%;
+}
+
+p{
+    color:rgb(206, 206, 206);
+}
+
+ion-card-title{
+    font-size: 160%;
+    margin-left:8%;
+}
+
+ion-card-content{
+    margin-right: 15%;
+}
+
+.ion-header{
+    margin-top: -15px;
+    height: 25%;
+    background-color: rgba(211, 209, 209, 0.555);
+    margin-bottom: 20%;
+   
+    border-radius: 0px 0px 5% 5%;
+}
+
+.separador{
+    margin-top: 10%;
+    color:rgb(46, 46, 46);
+}
+
+ion-item{
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.cards{
+    margin-top:25%;
+}
+
+.userInfoRow{
+    margin-top:7%;
+}
+
+.downArroIcon{
+    margin-top:0;
+}
+
+.infoRow{
+    display: inline;
+    float: left;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+}
+
+.btnProsseguir{
+    width: 50%;
+    margin-left: 28%;
+    font-weight: bold;
+}
+
+.infosRow{
+    margin-bottom: 9%;
+}
+
+.infoRowData{
+    float:right;
+}
+
+ion-select {
+    position: static;
+    max-width: 100%;
+}

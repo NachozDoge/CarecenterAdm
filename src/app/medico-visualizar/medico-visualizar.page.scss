@@ -1,0 +1,99 @@
+ion-avatar,
+ion-avatar > img{
+    border-radius:50%;
+    height:7rem;
+    width:7rem;
+    margin-left: 29%;
+    margin-top: 5px;
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: calc(50% 50px);
+}
+
+ion-toolbar{
+    background-color: transparent;
+    img{
+        width: 65px;
+        height: 50px;
+        margin-right: 5px;
+        float: right;
+    }
+}
+
+ion-label{
+   color: #000;
+   margin: 0 auto;
+   margin-left: 5%;
+   width: 10em;
+   font-weight: bold;
+}
+
+ion-card-content{
+    height: 100%;
+}
+
+
+.line{
+    margin-top: 2%;
+    height: 2px;
+    background-color: rgba(184, 184, 184, 0.644);
+}
+.page-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    color: rgb(61, 61, 61);
+}
+.ion-header{
+    margin-top: -15px;
+    height: 15%;
+    background-color: rgba(211, 209, 209, 0.555);
+    margin-bottom: 20%;
+   
+    border-radius: 0px 0px 5% 5%;
+    p{
+        color: black;   
+    }
+}
+.title{
+    display: inline;
+    font-size: 160%;
+    height:3.5em;
+    font-weight: bold;
+}
+.card-content{
+margin: 1% 0 1% 0;
+padding-bottom: 15%;
+font-size: 110%;
+}
+.left-content{
+    font-weight: bold;
+    display: inline;
+    float: left;
+    margin-top: 4%;
+}
+.spacing-left-content{
+    height: 10px;
+}
+.right-content{
+    float: right;
+}
+
+.cards{
+    margin-top:25%;
+}
+
+.icon-spacing{
+    display: inline;
+}
+
+.background-card{
+    background-color:rgba(184, 184, 184, 0.3) ;
+}
+
+.btnVoltar{
+    padding-top: 1.5em;
+}

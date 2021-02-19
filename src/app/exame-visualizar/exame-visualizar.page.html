@@ -1,0 +1,34 @@
+<ion-header class="ion-no-border">
+</ion-header>
+
+<ion-content color="primary">
+
+  <ion-button class="btnVoltar" fill="clear" size="big" color="dark" onClick="history.go(-1)">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-button>
+
+  <ion-card style="border-radius: 15px;">
+    <ion-item style="margin-top: 10%;">
+      <ion-label>Exame:</ion-label>
+      <ion-input disabled="true" value="{{exame.sangue}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Data:</ion-label>
+      <ion-input disabled="true" value="{{exame.data}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Estado:</ion-label>
+      <ion-input disabled="true" value="{{exame.estado}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Metodo:</ion-label>
+      <ion-input disabled="true" value="{{exame.metodo}}"></ion-input>
+    </ion-item>
+    
+    <div class="separador"></div>
+  </ion-card>
+
+</ion-content>

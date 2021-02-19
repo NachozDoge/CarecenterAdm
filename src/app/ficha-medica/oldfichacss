@@ -1,0 +1,98 @@
+ion-avatar,
+ion-avatar > img{
+    border-radius:50%;
+    height:7rem;
+    width:7rem;
+    margin-left: 29%;
+    margin-top: 5px;
+    position: absolute;
+    display: block;
+    top: 46px;
+    left: calc(50% 50px);
+}
+ion-title{
+    margin-left: 40%;
+    img{
+        height: 72px;
+    }
+}
+ion-toolbar{
+    background-color: transparent;
+    
+}
+
+ion-label{
+   margin-left:8.5%;
+   margin-top:2%;
+   color:rgb(46, 46, 46);
+   font-weight: bold;
+}
+
+.userInfos{
+    float:right;
+    display: inline;
+    margin-right: 5%;
+}
+
+p{
+    color:rgb(206, 206, 206);
+}
+
+ion-card-title{
+    font-size: 160%;
+    margin-left:8%;
+}
+
+.ion-header{
+    margin-top: -15px;
+    height: 25%;
+    background-color: rgba(211, 209, 209, 0.555);
+    margin-bottom: 20%;
+   
+    border-radius: 0px 0px 5% 5%;
+}
+
+.separador{
+    margin-top: 10%;
+}
+
+.btnProsseguir{
+    width: 65%;
+    margin-left: 21%;
+    font-weight: bold;
+}
+
+ion-item{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+   display: block;
+  
+}
+
+.cards{
+    margin-top:25%;
+}
+
+.userInfoRow{
+    margin-top:7%;
+}
+
+.downArroIcon{
+    margin-top:0;
+}
+
+.infoRow{
+    display: inline;
+    float: left;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+}
+
+.infosRow{
+    margin-bottom: 9%;
+}
+
+.infoRowData{
+    float:right;
+}

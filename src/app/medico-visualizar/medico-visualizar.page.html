@@ -1,0 +1,74 @@
+<ion-header class="ion-no-border">
+</ion-header>
+
+<ion-content color="primary">
+
+  <div class="ion-header">
+    <ion-button class="btnVoltar" fill="clear" size="big" color="dark" onClick="history.go(-1)">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-avatar>
+      <img src="/assets/imgs/usuario.png" >
+    </ion-avatar>
+  </div>
+
+  <ion-card style="border-radius: 15px;">
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input disabled="true" value="{{medico.nome}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Especialidade</ion-label>
+      <ion-input disabled="true" value="{{medico.espc}}"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>CPF</ion-label>
+      <ion-input disabled="true" value="{{medico.cpf}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Endereço</ion-label>
+      <ion-input disabled="true" value="{{medico.endereco}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Número</ion-label>
+      <ion-input disabled="true" value="{{medico.numero}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cidade</ion-label>
+      <ion-input disabled="true" value="{{medico.cidade}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Estado</ion-label>
+      <ion-input disabled="true" value="{{medico.estado}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Telefone</ion-label>
+      <ion-input disabled="true" value="{{medico.telefone}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      <ion-input disabled="true" value="{{medico.email}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Data de Nascimento</ion-label>
+      <ion-input disabled="true" value="{{medico.dataesq}}"></ion-input>
+    </ion-item>
+
+    <ion-button color="dark" (click)="atualizar()" expand="full" shape="round" style="width: 50%;margin:0 auto;margin-top: 10%;margin-bottom: 5%;">
+      Atualizar</ion-button>
+    <div class="separador"></div>
+    
+  </ion-card>
+
+</ion-content>
+

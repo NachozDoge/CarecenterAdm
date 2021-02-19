@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>  
+    <img src="/assets/imgs/carecenterlogo.png">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color='primary'>
+  <div class="background-card">
+    <ion-card>  
+        <ion-card-content>
+
+            <div class="title">
+              <center>Consultas</center>
+            </div>
+            <div class="separador"></div>
+
+            <div class="card-content">
+              
+              <div class="SBar">
+                <form class="searchbar">
+                  <ion-searchbar #nome></ion-searchbar>
+                </form>
+                <ion-button shape="round" color="dark" class="btnSearchbar" (click)="pesquisar()" style="margin-right: 1.7em;">
+                  Pesquisar</ion-button>
+              </div>
+
+              <ion-list>
+                <ion-item *ngFor="let consulta of lista">
+                  <ion-label>{{consulta.especialidade}}</ion-label>
+                  <ion-button color="dark" (click)="visualizar(consulta)">Visualizar</ion-button>
+                </ion-item>
+              </ion-list>        
+            </div>
+
+        </ion-card-content>
+      </ion-card>
+  </div>
+</ion-content>
+      
+      

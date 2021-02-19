@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>  
+    <img src="/assets/imgs/carecenterlogo.png">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color='primary'>
+  <div class="background-card">
+    <ion-card>  
+        <ion-card-content>
+
+            <div class="title">
+              <center>Médicos</center>
+            </div>
+            <div class="separador"></div>
+
+            <div class="card-content">
+              <div class="SBar">
+            
+              </div>
+
+              <ion-list style="margin-top: 2em;">
+                <ion-item *ngFor="let exame of lista">
+                  <ion-label>{{exame.sangue}}</ion-label>
+                  <ion-button color="dark" (click)="visualizar(exame)" shape="round">Ver</ion-button>
+                  <ion-button color="dark" (click)="agendar(exame.id)" shape="round">Agendar</ion-button>
+                </ion-item>
+              </ion-list>
+            </div>
+
+        </ion-card-content>
+      </ion-card>
+  </div>
+</ion-content>
+      
+      

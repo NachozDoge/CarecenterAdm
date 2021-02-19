@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="/assets/imgs/carecenterlogo.png" >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color='primary'>
+
+  <div class="page-title">
+    Nossos planos
+  </div>
+
+  <ion-card> 
+    
+    <ion-card-content>
+      <div class="content-header">
+        <div class="left-title">
+          Care
+        </div>
+        <div class="right-discount">
+            Gratúito
+        </div>
+      </div>
+     -Informações médicas no celular
+     <br>
+     -Acesso ilimitado ao aplicativo
+     <p style="float: right;color: rgba(146, 146, 146, 0.753);">Plano atual</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card button (click)="buttonClick()"> 
+    
+    <ion-card-content>
+      <div class="content-header">
+        <div class="left-title">
+          CareUp
+        </div>
+        <div class="right-discount-p">
+            19$/mês
+        </div>
+      </div>
+     -Orientações médicas 24 horas
+     <br>
+     -Desconto em exames adicionais
+     <br>
+     -Uma consulta online todo mês
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card button (click)="buttonClick()"> 
+    
+    <ion-card-content>
+      <div class="content-header">
+        <div class="left-title">
+          CareNow
+        </div>
+        <div class="right-discount-p">
+            70$/mês
+        </div>
+      </div>
+     -Todos os bonus anteriores
+     <br>
+     -Duas consultas online todo mês
+     <br>
+     -Desconto em planos de saúde <br>
+      <a style="margin-left: 1.5%;"></a>de nossos parceiros
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
