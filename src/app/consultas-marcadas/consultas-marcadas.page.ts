@@ -30,8 +30,8 @@ export class ConsultasMarcadasPage implements OnInit {
     })
   }
 
-  visualizar(cliente){
-    this.navCtrl.navigateForward(['/clientes-visualizar',cliente.id])
+  visualizar(id){
+    this.navCtrl.navigateForward(['/consultas-visualizar',id])
   }
 
   pesquisar(){

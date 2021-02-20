@@ -56,6 +56,26 @@ export class exameService {
 
         }))
     }
+    
+    buscaPorEspecialidade(sangue: string): Observable<any> {
+
+        // Observable -> Aguardar resposta do servidor
+        return from(new Observable(observe => { // converter para Observable
+            this.firestore.collection('exame').ref.orderBy("sangue")
+                .startAt(sangue).endAt(sangue + "\uf8ff").get().then(response => {
+                    let lista: Exame[] = [];
+                    response.docs.map(obj => {
+                        // será repetido para cada registro, cada registro do Firestore se chama obj
+                        let exame: Exame = new Exame();
+                        exame.setData(obj.data());// obj.payload.doc.data() -> Dados do exame
+                        exame.id = obj.id; // inserindo ID
+                        lista.push(exame); // adicionando o exame na lista // push é adicionar
+                    });
+                    observe.next(lista);
+                })
+
+        }))
+    }
 
     getexame(idUser) {
         return from(new Observable(observe => { // converter para Observable

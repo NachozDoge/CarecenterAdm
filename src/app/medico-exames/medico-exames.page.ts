@@ -41,7 +41,7 @@ export class MedicoExamesPage implements OnInit {
 
   pesquisar(){
     console.log("Busca por: "+this.sangue.value)
-    this.exameServ.buscaPorNome(this.sangue.value).subscribe(response=>{
+    this.exameServ.buscaPorEspecialidade(this.sangue.value).subscribe(response=>{
       this.lista = [];
       this.lista = response;
     });

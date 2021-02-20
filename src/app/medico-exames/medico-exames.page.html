@@ -19,6 +19,16 @@
 
             <div class="card-content">
               <div class="SBar">
+                <form class="searchbar">
+
+                  <ion-select #sangue value="sangue"   >
+                    <ion-select-option value="Covid">Covid</ion-select-option>
+                    <ion-select-option value="Aids">Aids</ion-select-option>
+                    <ion-select-option value="Sifilis">Sifilis</ion-select-option>
+                  </ion-select>
+                </form>
+                <ion-button shape="round" color="dark" class="btnSearchbar" (click)="pesquisar()" style="margin-right: 1.7em;">
+                  Pesquisar</ion-button>
             
               </div>
 

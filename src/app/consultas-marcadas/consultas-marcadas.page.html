@@ -23,28 +23,14 @@
         <div class="line"></div>
 
         <div class="card-content">
-
+          <ion-list>
+            <ion-item *ngFor="let consulta of lista">
+              <ion-label>{{consulta.especialidade}}</ion-label>
+              <ion-button color="dark" (click)="visualizar(consulta)">Visualizar</ion-button>
+            </ion-item>
+          </ion-list>        
           
         </div>
-
-        <div class="line"></div>
-
-        <div class="card-content">
-
-          <div class="left-content">
-            Física-
-            <div class="spacing-left-content"></div>
-            <p>Fisioterapeuta</p>
-          </div>
-          <div class="right-content">
-            <ion-icon name="time-outline" style="font-size: 160%; margin: 0 0 0 26%;"></ion-icon>
-            <p style="font-weight: bold;">Em 9 dias</p>
-          </div>
-          
-        </div>
-        <div class="line"></div>
-
-
     </ion-card-content>
   </ion-card>
 
@@ -61,47 +47,12 @@
         <div class="line"></div>
 
         <div class="card-content">
-
-          <div class="left-content">
-            Online-
-            <div class="spacing-left-content"></div>
-            <p>Psicólogo no celular</p>
-          </div>
-          <div class="right-content">
-            <ion-icon name="checkmark-circle" style="font-size: 160%; margin: 0 0 0 26%;"></ion-icon>
-            <p style="font-weight: bold;">À 10 dias</p>
-          </div>
-          
-        </div>
-        <div class="line"></div>
-
-        <div class="card-content">
-
-          <div class="left-content">
-            Online-
-            <div class="spacing-left-content"></div>
-            <p>Psiquiatra no celular</p>
-          </div>
-          <div class="right-content">
-            <ion-icon name="checkmark-circle" style="font-size: 160%; margin: 0 0 0 26%;"></ion-icon>
-            <p style="font-weight: bold;">À 16 dias</p>
-          </div>
-          
-        </div>
-        <div class="line"></div>
-
-        <div class="card-content">
-
-          <div class="left-content">
-            Física-
-            <div class="spacing-left-content"></div>
-            <p>Dermatologista</p>
-          </div>
-          <div class="right-content">
-            <ion-icon name="checkmark-circle" style="font-size: 160%; margin: 0 0 0 26%;"></ion-icon>
-            <p style="font-weight: bold;">À 21 dias</p>
-          </div>
-          
+          <ion-list>
+            <ion-item *ngFor="let consulta of lista">
+              <ion-label>{{consulta.especialidade}}</ion-label>
+              <ion-button color="dark" (click)="visualizar(consulta)">Visualizar</ion-button>
+            </ion-item>
+          </ion-list>        
         </div>
         <div class="line"></div>
 
